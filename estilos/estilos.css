@@ -10,3 +10,17 @@ aside {
     background-color: #eeeeee;
     color: #333333;
 }
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
