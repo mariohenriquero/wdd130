@@ -24,3 +24,9 @@ main img {
 p {
     padding: 0;
 }
+
+footer {
+    margin-top: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+}
