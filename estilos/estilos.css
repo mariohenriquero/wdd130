@@ -1,0 +1,12 @@
+main {
+    max-width: 800px;
+}
+
+aside {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #eeeeee;
+    color: #333333;
+}
