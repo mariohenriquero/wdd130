@@ -1,16 +1,19 @@
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav a {
     color: white;
-    padding: 20px;
     display: block;
+    padding: 20px;
 }
 
 main {
     max-width: 800px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -32,6 +35,7 @@ aside {
     padding: 15px;
     background-color: #eeeeee;
     color: #333333;
+    position: relative;
 }
 
 aside img {
