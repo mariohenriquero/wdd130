@@ -1,0 +1,64 @@
+CSE 111 Proposta para um Programa Escolhido pelo Estudante
+
+1. Qual é o título do seu programa?
+
+Planejador Financeiro Familiar
+
+2. Que problema do mundo real o seu programa vai abordar ou ajudar a resolver?
+
+O programa ajudará famílias a organizar melhor sua renda mensal, controlar despesas e planejar metas financeiras. Muitas famílias têm dificuldade para saber quanto gastam, quanto sobra no fim do mês e quanto precisam economizar para alcançar objetivos como viagens, reserva de emergência, pagamento de dívidas ou compra de bens.
+
+O usuário informará sua renda mensal, suas despesas fixas e variáveis, além de uma meta financeira. O programa analisará essas informações e apresentará relatórios que mostrarão a situação financeira atual da família, o percentual da renda comprometido com despesas e uma estimativa de quanto tempo será necessário para atingir a meta desejada. Dessa forma, o programa auxiliará no planejamento financeiro e na tomada de decisões mais conscientes.
+
+3. O que você aprenderá ao desenvolver este programa?
+
+* Criar funções organizadas e reutilizáveis.
+* Trabalhar com cálculos financeiros.
+* Utilizar estruturas condicionais e funções matemáticas.
+* Receber e validar dados fornecidos pelo usuário.
+* Separar funções de entrada e saída das funções de processamento.
+* Escrever testes automatizados utilizando pytest.
+* Melhorar a organização e manutenção do código.
+
+4. Quais módulos Python o seu programa usará?
+
+* math
+* pytest
+
+O módulo math será utilizado para cálculos e arredondamentos relacionados ao planejamento financeiro. O módulo pytest será utilizado para criar e executar testes automatizados que verificarão se os cálculos do programa estão funcionando corretamente.
+
+5. Liste os nomes das funções de que você precisará.
+
+main()
+
+obter_valor()
+
+calcular_total_despesas()
+
+calcular_saldo_mensal()
+
+calcular_percentual_comprometido()
+
+calcular_meses_para_meta()
+
+calcular_economia_necessaria()
+
+classificar_situacao_financeira()
+
+formatar_moeda()
+
+exibir_relatorio()
+
+6. Liste os nomes das funções de teste que você escreverá.
+
+test_calcular_total_despesas()
+
+test_calcular_saldo_mensal()
+
+test_calcular_percentual_comprometido()
+
+test_calcular_meses_para_meta()
+
+test_calcular_economia_necessaria()
+
+test_classificar_situacao_financeira()
