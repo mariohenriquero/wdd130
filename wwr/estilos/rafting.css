@@ -1,211 +1,48 @@
-:root {
-    --primary-color: #0b3d52;
-    --secondary-color: #e7f3f8;
-    --accent-color: #ffffff;
-    --text-color: #222222;
-    --border-color: #cccccc;
-
-    --heading-font: Arial, Helvetica, sans-serif;
-    --body-font: Arial, Helvetica, sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--text-color);
-    background-color: var(--accent-color);
-}
-
-header,
-main,
-footer {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--secondary-color);
-    border-bottom: 1px solid var(--border-color);
-}
-
-header img {
-    width: 120px;
-    height: auto;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-header nav a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 700;
-    padding: 0.75rem 1rem;
-}
-
-header nav a:hover {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
-}
-
-/* ===== Página Sobre Nós ===== */
-
-.hero {
-    position: relative;
-}
-
-.hero > img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 2rem;
-    width: 100%;
-    padding: 1rem;
-    text-align: center;
-    color: var(--accent-color);
-    background-color: rgba(0, 0, 0, 0.55);
-    font-family: var(--heading-font);
-}
-
-.hero article {
-    position: absolute;
-    left: 4rem;
-    right: 4rem;
-    bottom: 3rem;
-    padding: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.85);
-}
-
-.hero article img {
-    float: right;
-    width: 150px;
-    height: auto;
-    margin-left: 1rem;
-    border: 2px solid var(--accent-color);
-}
-
-.history {
-    display: grid;
-    grid-template-columns: 1fr 260px 1fr;
-    gap: 1.5rem;
-    align-items: center;
-    padding: 2rem 1rem;
-}
-
-.history h2 {
-    grid-column: 1 / 4;
-    text-align: center;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-family: var(--heading-font);
-}
-
-.history img {
-    width: 260px;
-    height: auto;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-.history p:first-of-type {
-    grid-column: 1 / 2;
-}
-
-.history p:last-of-type {
-    grid-column: 3 / 4;
-}
-
-.adventure {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    padding: 2rem 1rem;
-}
-
-.adventure h2 {
-    grid-column: 1 / 6;
-    text-align: center;
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    font-family: var(--heading-font);
-}
-
-.adventure figure {
-    text-align: center;
-}
-
-.adventure img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border: 1px solid var(--border-color);
-}
-
-.adventure figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--text-color);
-}
-
-/* ===== Página Fale Conosco ===== */
+/* =========================
+   PÁGINA DE CONTATO
+========================= */
 
 .contact {
     padding: 2rem 1rem;
 }
 
-.contact h1,
-.contact h2,
-.employees h2 {
+.contact h1 {
     text-align: center;
     color: var(--primary-color);
-    font-family: var(--heading-font);
-}
-
-.contact h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    align-items: start;
-    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .company-info,
 .contact-form {
-    border: 1px solid var(--border-color);
-    padding: 1.5rem;
     background-color: var(--secondary-color);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.company-info h2,
+.contact-form h2,
+.employees h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 .company-info p {
-    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 .company-info iframe {
     width: 100%;
-    height: 350px;
+    height: 300px;
+    border: 0;
     margin-top: 1rem;
-    border: none;
 }
 
 .contact-form {
@@ -214,23 +51,18 @@ header nav a:hover {
 }
 
 .contact-form label {
-    margin-top: 0.75rem;
     font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
     width: 100%;
-    margin-top: 0.25rem;
     padding: 0.75rem;
     border: 1px solid var(--border-color);
     font-family: var(--body-font);
-    font-size: 1rem;
-}
-
-.contact-form textarea {
-    resize: vertical;
 }
 
 .contact-form fieldset {
@@ -244,155 +76,104 @@ header nav a:hover {
     color: var(--primary-color);
 }
 
-.contact-form fieldset label {
-    display: block;
+.contact-form fieldset input {
     margin-top: 0.5rem;
-    font-weight: 400;
+    margin-right: 0.5rem;
+}
+
+.contact-form fieldset label {
+    font-weight: normal;
+    margin-right: 1rem;
 }
 
 .newsletter {
     display: flex;
-    gap: 0.5rem;
     align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.newsletter label {
+    margin: 0;
+    font-weight: normal;
 }
 
 .contact-form button {
-    margin-top: 1rem;
-    padding: 0.9rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
     border: none;
     background-color: var(--primary-color);
-    color: var(--accent-color);
-    font-weight: 700;
-    font-size: 1rem;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
 }
 
 .contact-form button:hover {
-    background-color: #062838;
+    opacity: 0.9;
 }
 
-/* ===== Funcionários ===== */
+/* =========================
+   FUNCIONÁRIOS
+========================= */
 
 .employees {
-    margin: 2rem 1rem;
-    padding: 1.5rem;
+    padding: 2rem 1rem;
 }
 
 .employee-grid {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    margin-top: 1.5rem;
 }
 
 .employee-grid figure {
     text-align: center;
-    max-width: 220px;
 }
 
 .employee-grid img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border: 1px solid var(--border-color);
 }
 
 .employee-grid figcaption {
-    margin-top: 0.5rem;
-    font-weight: 700;
+    margin-top: 0.75rem;
+    font-weight: bold;
 }
 
-/* ===== Rodapé ===== */
+/* =========================
+   RODAPÉ
+========================= */
 
-footer {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding: 1rem;
-    margin-top: 1rem;
-    border-top: 1px solid var(--border-color);
-    background-color: var(--secondary-color);
-}
-
-footer p {
-    text-align: center;
-}
-
-.socialmedia {
+.redes-sociais {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 0.75rem;
 }
 
-.socialmedia a {
+.redes-sociais a {
     text-decoration: none;
 }
 
-.socialmedia img {
+.redes-sociais img {
     width: 32px;
     height: 32px;
 }
 
-/* ===== Responsivo ===== */
+/* =========================
+   RESPONSIVO
+========================= */
 
 @media (max-width: 768px) {
-    header {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    header img {
-        margin: 0 auto;
-    }
-
-    header nav {
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    .hero h1,
-    .hero article {
-        position: static;
-    }
-
-    .hero article img {
-        float: none;
-        display: block;
-        margin: 0 auto 1rem;
-    }
-
-    .history {
-        grid-template-columns: 1fr;
-    }
-
-    .history h2,
-    .history img,
-    .history p:first-of-type,
-    .history p:last-of-type {
-        grid-column: auto;
-        grid-row: auto;
-    }
-
-    .history img {
-        margin: 0 auto;
-    }
-
-    .adventure {
-        grid-template-columns: 1fr;
-    }
-
-    .adventure h2 {
-        grid-column: auto;
-    }
 
     .contact-grid {
         grid-template-columns: 1fr;
     }
 
     .employee-grid {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
     }
 
     footer {
@@ -400,7 +181,7 @@ footer p {
         gap: 1rem;
     }
 
-    .socialmedia {
+    .redes-sociais {
         justify-content: center;
     }
 }
