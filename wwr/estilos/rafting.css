@@ -554,4 +554,20 @@ footer {
   .redes-sociais {
     justify-content: center;
   }
+
+.home-offers > h2 {
+    position: absolute;
+    left: -9999px;
+}
+
+.trip-cards > h2 {
+    position: absolute;
+    left: -9999px;
+}
+
+.hero article h2 {
+    position: absolute;
+    left: -9999px;
+}
+
 }
