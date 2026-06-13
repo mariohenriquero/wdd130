@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Página Inicial | Aventura Rafting</title>
   <meta name="description"
-    content="Conheça a Aventura Rafting e viva experiências emocionantes em corredeiras incríveis.">
+    content="Página inicial da Aventura Rafting com passeios em corredeiras, experiências na natureza, newsletter e chamada para conhecer nossas viagens.">
   <meta name="author" content="Mário Henrique R. de Oliveira">
   <link rel="stylesheet" href="estilos/rafting.css">
 </head>
@@ -25,22 +25,57 @@
 
   <main>
     <section class="home-hero">
-      <h1>Aventura Rafting</h1>
-      <p>Viva momentos inesquecíveis em rios, corredeiras e paisagens naturais com segurança, emoção e diversão.</p>
+      <img src="imagens/rafting-hero.jpg" alt="Grupo praticando rafting em corredeiras">
+      <div class="home-hero-message">
+        <h1>Viva Uma Aventura nas Corredeiras</h1>
+        <p>Rafting seguro, emocionante e inesquecível para famílias, amigos e grupos de aventura.</p>
+      </div>
     </section>
 
-    <section class="home-grid">
+    <section class="home-intro">
       <div>
-        <h2>Rafting com Segurança</h2>
-        <p>Nossos passeios são conduzidos por guias treinados e preparados para oferecer uma experiência emocionante e
-          segura.</p>
+        <h2>Explore a Natureza com Segurança</h2>
+        <p>A Aventura Rafting oferece passeios guiados por profissionais treinados, com equipamentos de qualidade e
+          roteiros planejados para diferentes níveis de experiência.</p>
       </div>
 
-      <div>
-        <h2>Natureza e Aventura</h2>
-        <p>Explore rios, trilhas e paisagens incríveis enquanto cria memórias com amigos, família ou grupos especiais.
-        </p>
-      </div>
+      <form class="newsletter-form" action="#" method="post">
+        <h2>Receba Novidades</h2>
+
+        <label for="newsletter-name">Nome</label>
+        <input type="text" id="newsletter-name" name="newsletter-name" required>
+
+        <label for="newsletter-email">E-mail</label>
+        <input type="email" id="newsletter-email" name="newsletter-email" required>
+
+        <button type="submit">Inscrever-se na Newsletter</button>
+      </form>
+    </section>
+
+    <section class="home-call">
+      <h2>Escolha sua próxima aventura</h2>
+      <p>Temos opções para iniciantes, famílias e aventureiros que procuram corredeiras mais intensas.</p>
+      <a href="passeios.html" class="button-link">Conheça nossos passeios</a>
+    </section>
+
+    <section class="home-offers">
+      <article>
+        <img src="imagens/rafting1.jpg" alt="Barco de rafting descendo corredeiras">
+        <div>
+          <h2>Passeios para Todos os Níveis</h2>
+          <p>Oferecemos experiências tranquilas para iniciantes e rotas mais emocionantes para quem busca adrenalina.
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <img src="imagens/rafting3.jpg" alt="Participantes remando em equipe durante rafting">
+        <div>
+          <h2>Trabalho em Equipe</h2>
+          <p>O rafting fortalece a comunicação, a confiança e a cooperação entre os participantes durante todo o
+            percurso.</p>
+        </div>
+      </article>
     </section>
   </main>
 
