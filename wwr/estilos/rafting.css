@@ -56,7 +56,10 @@ header nav a {
   font-weight: bold;
 }
 
-header nav a:hover {
+header nav a:hover,
+.button-link:hover,
+.newsletter-form button:hover,
+.contact-form button:hover {
   background-color: var(--accent-color);
   color: #000;
 }
@@ -71,9 +74,7 @@ main {
   padding: 1rem;
 }
 
-/* =========================
-   PÁGINA INICIAL
-========================= */
+/* HOME */
 
 .home-hero {
   position: relative;
@@ -114,31 +115,40 @@ main {
 .home-call,
 .home-offers article,
 .trips-hero,
-.trips-contact {
+.trips-contact,
+.company-info,
+.contact-form {
   background-color: var(--secondary-color);
   padding: 1.5rem;
   border: 1px solid var(--border-color);
 }
 
-.newsletter-form {
+.newsletter-form,
+.contact-form {
   display: flex;
   flex-direction: column;
 }
 
-.newsletter-form label {
+.newsletter-form label,
+.contact-form label {
   font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 0.3rem;
 }
 
-.newsletter-form input {
+.newsletter-form input,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
   padding: 0.75rem;
   border: 1px solid var(--border-color);
   font-family: var(--body-font);
 }
 
 .newsletter-form button,
-.contact-form button {
+.contact-form button,
+.button-link {
   margin-top: 1.5rem;
   padding: 1rem;
   border: none;
@@ -149,31 +159,17 @@ main {
   border-radius: 4px;
 }
 
-.newsletter-form button:hover,
-.contact-form button:hover {
-  background-color: var(--accent-color);
-  color: #000;
-}
-
-.home-call {
-  text-align: center;
-  margin: 2rem 0;
-}
-
 .button-link {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.85rem 1.25rem;
-  background-color: var(--primary-color);
-  color: white;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
 }
 
-.button-link:hover {
-  background-color: var(--accent-color);
-  color: #000;
+.home-call,
+.trips-hero,
+.trips-contact {
+  text-align: center;
+  margin: 2rem 0;
 }
 
 .home-offers {
@@ -182,9 +178,13 @@ main {
   gap: 2rem;
 }
 
+.home-offers > h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
 .home-offers article {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
@@ -194,9 +194,7 @@ main {
   display: block;
 }
 
-/* =========================
-   PÁGINA SOBRE
-========================= */
+/* SOBRE */
 
 .hero {
   position: relative;
@@ -225,6 +223,11 @@ main {
   background-color: rgba(31, 78, 95, 0.9);
   color: white;
   padding: 1rem;
+}
+
+.hero article h2 {
+  color: white;
+  margin-top: 0;
 }
 
 .hero article img {
@@ -280,14 +283,7 @@ main {
   font-weight: bold;
 }
 
-/* =========================
-   PÁGINA PASSEIOS
-========================= */
-
-.trips-hero {
-  text-align: center;
-  margin: 1rem 0 2rem;
-}
+/* PASSEIOS */
 
 .trips-hero h1 {
   font-size: 2.4rem;
@@ -296,8 +292,11 @@ main {
 
 .trip-cards {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1.5rem;
+}
+
+.trip-cards > h2 {
+  text-align: center;
 }
 
 .trip-cards article {
@@ -346,22 +345,17 @@ tr:nth-child(even) {
   background-color: var(--secondary-color);
 }
 
-.trips-contact {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-/* =========================
-   PÁGINA CONTATO
-========================= */
+/* CONTATO */
 
 .contact {
   padding: 2rem 1rem;
 }
 
-.contact h1 {
+.contact h1,
+.company-info h2,
+.contact-form h2,
+.employees h2 {
   text-align: center;
-  margin-bottom: 1rem;
 }
 
 .contact-grid {
@@ -370,44 +364,11 @@ tr:nth-child(even) {
   gap: 2rem;
 }
 
-.company-info,
-.contact-form {
-  background-color: var(--secondary-color);
-  padding: 1.5rem;
-  border: 1px solid var(--border-color);
-}
-
-.company-info h2,
-.contact-form h2,
-.employees h2 {
-  text-align: center;
-}
-
 .company-info iframe {
   width: 100%;
   height: 300px;
   border: 0;
   margin-top: 1rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form label {
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-bottom: 0.3rem;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid var(--border-color);
-  font-family: var(--body-font);
 }
 
 .contact-form fieldset {
@@ -469,9 +430,7 @@ tr:nth-child(even) {
   font-weight: bold;
 }
 
-/* =========================
-   RODAPÉ
-========================= */
+/* FOOTER */
 
 footer {
   display: grid;
@@ -498,9 +457,7 @@ footer {
   height: 32px;
 }
 
-/* =========================
-   RESPONSIVO
-========================= */
+/* RESPONSIVO */
 
 @media (max-width: 768px) {
   header {
@@ -554,20 +511,4 @@ footer {
   .redes-sociais {
     justify-content: center;
   }
-
-.home-offers > h2 {
-    position: absolute;
-    left: -9999px;
-}
-
-.trip-cards > h2 {
-    position: absolute;
-    left: -9999px;
-}
-
-.hero article h2 {
-    position: absolute;
-    left: -9999px;
-}
-
 }
